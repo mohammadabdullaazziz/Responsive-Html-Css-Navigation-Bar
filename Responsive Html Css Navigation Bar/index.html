@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive NavMenu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav section code start -->
+     <nav>
+        <ul class="side-bar">
+            <li onclick=hideSidebar() > <a href="#"><img src="image/close.png"></a></li>
+            <li> <a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+        <ul>
+            <li> <a href="#">CodeAbdullah</a></li>
+            <li class="hideOnMobile"> <a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Service</a></li>
+            <li class="hideOnMobile"><a href="#">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick= showSidebar()><a href="#"><img src="image/menu.png"></a></li>
+        </ul>
+    </nav>
+    <!-- nav section code end -->
+     <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.side-bar')
+          sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+          sidebar.style.display = 'none'
+        }
+     </script>
+</body>
+</html>
